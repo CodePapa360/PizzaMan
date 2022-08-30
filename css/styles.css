@@ -5,7 +5,6 @@
 
     --fs-500: 1.4rem;
     --fs-600: 1.7rem;
-    --fs-700: 2rem;
 }
 
 body {
@@ -150,7 +149,7 @@ header {
 }
 
 .top-contents h1 {
-    font-size: var(--fs-700);
+    font-size: clamp(2rem, 0.5rem + 3vw, 3rem);
     color: var(--clr-primary);
 }
 
@@ -508,7 +507,6 @@ footer {
     :root {
         --fs-500: 1.7rem;
         --fs-600: 2rem;
-        --fs-700: 3rem;
     }
 
     .top-contents__image {
