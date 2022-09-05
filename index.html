@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,31 +9,46 @@
     <meta name="description" content="Pizza restaurant landing page" />
     <meta property="og:title" content="PizzaMan restaurant landing page design - CodePapa360" />
     <meta property="og:description" content="PizzaMan - Pizza restaurant landing page design coded by Alamin" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/CodePapa360/PizzaMan/main/screenshots/desktop-preview.png" />
-    
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/CodePapa360/PizzaMan/main/screenshots/desktop-preview.png" />
+
     <script src="https://kit.fontawesome.com/b3b298ed40.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>PizzaMan</title>
 </head>
 
 <body>
+
     <header>
         <nav class="container">
             <div class="nav-contents">
-                <div class="hamburger-btn-wrapper">
+                <input type="checkbox" id="hamburger-input" hidden></input>
+                <label for="hamburger-input" class="hamburger-btn-wrapper">
                     <div class="hamburger-btn"></div>
+                </label>
+                <label for="hamburger-input" class="ham-overlay"></label>
+
+                <div class="mobile-nav">
+                    <label for="hamburger-input" class="cross-btn">X</label>
+                    <ul class="mobile-nav_links pages">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#our-goals">Our goals</a></li>
+                        <li><a href="#types">Pizza Types</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                    </ul>
                 </div>
+
                 <p class="logo-name">PizzaMan</p>
                 <ul class="desktop-nav">
-                    <li><a href="https://github.com/CodePapa360">Home</a></li>
-                    <li><a href="https://github.com/CodePapa360">Order online</a></li>
-                    <li><a href="https://github.com/CodePapa360">Catering Menu</a></li>
-                    <li><a href="https://github.com/CodePapa360">Reviews</a></li>
-                    <li><a href="https://github.com/CodePapa360">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#our-goals">Our goals</a></li>
+                    <li><a href="#types">Pizza types</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                 </ul>
                 <ul class="social-icons">
                     <li><a href="https://www.linkedin.com/in/codepapa360/"><i class="fa-brands fa-linkedin"></i></a>
@@ -47,7 +62,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="home">
             <div class="container">
                 <div class="top-contents">
                     <img class="top-contents__image" src="images/top-section.jpg" alt="Delicious pizza">
@@ -81,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="about-us">
             <div class="container">
                 <div class="about-us-contents">
                     <h2>About Us</h2>
@@ -92,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section class="goal-section">
+        <section id="our-goals" class="goal-section">
             <div class="container">
                 <div class="goals">
                     <h2 class="goals__header">PizzaMan Street Pizza</h2>
@@ -107,7 +122,6 @@
                         <img src="images/goal-img1.jpg" alt="Delicious pizza">
                     </div>
                     <div class="food-selection">
-                        <img src="images/goal-img2.jpg" alt="Delicious pizza">
                         <div>
                             <h2>Food Selection</h2>
                             <p>PizzaMan Street Pizza is loaded with fresh ingredients like mozzarella, marinara sauce,
@@ -115,11 +129,12 @@
                                 salads, pasta, and more. For drinks, we have beer, wine, and other items that are made
                                 to order.</p>
                         </div>
+                        <img src="images/goal-img2.jpg" alt="Delicious pizza">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="satisfy-section">
+        <section id="types" class="satisfy-section">
             <div class="container">
                 <div class="satisfy">
                     <div class="satisfy__headings">
@@ -198,11 +213,10 @@
                     </li>
                 </ul>
                 <ul class="pages">
-                    <li><a href="https://github.com/CodePapa360">Home</a></li>
-                    <li><a href="https://github.com/CodePapa360">Order online</a></li>
-                    <li><a href="https://github.com/CodePapa360">Catering Menu</a></li>
-                    <li><a href="https://github.com/CodePapa360">Reviews</a></li>
-                    <li><a href="https://github.com/CodePapa360">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#our-goals">Our goals</a></li>
+                    <li><a href="#types">Pizza Types</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                 </ul>
             </nav>
         </div>
